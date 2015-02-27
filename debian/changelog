@@ -1,3 +1,10 @@
+dfu-programmer (0.7.2-1) unstable; urgency=low
+  * New upstream release.
+  * Switched to native format for my convenience
+
+ -- Michael Sparks <sparks.m@gmail.com>  Fri, 27 Feb 2015 13:15:07 +0000
+
+
 dfu-programmer (0.6.1-1) unstable; urgency=low
 
   * New upstream release.
