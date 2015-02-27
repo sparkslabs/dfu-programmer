@@ -1,0 +1,47 @@
+dfu-programmer (0.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - remove website link in description (Closes: #642585).
+    - use libusb-1.0 instead of libusb.
+    - Build-Depends += dh-autoreconf
+    - add dependency to pkg-config (thanks to Julian Taylor).
+    - bump to debhelper 9.
+    - bump standards version to 3.9.4.
+    - correct hyphenation in description (thanks to Adrian Glaubitz).
+  * debian/patches/:
+    - update_configure.patch: make it working with ubuntu too.
+    - escape_minus_sign_in_manpage.patch: escape remaining minus sign.
+  * debian/rules: add autoreconf
+  * debian/copyright: update copyright-format version.
+
+ -- Rodolphe Pelloux-Prayer <rodolphe@damsy.net>  Tue, 23 Apr 2013 13:51:07 +0200
+
+dfu-programmer (0.5.4-1) unstable; urgency=low
+
+  * New upstream release. Closes: #590299, #633796.
+  * New maintainer. Closes: #637949.
+  * Switch to format 3.0 (quilt).
+  * debian/copyright: use machine-parsable format (DEP-5).
+  * debian/control:
+    - bump standards version to 3.9.2.
+    - add ${misc:Depends} to satisfy lintian …
+    - add Vcs-* fields.
+    - add Homepage field.
+    - change category to electronics.
+  * Switch debian/rules to use dh v8.
+
+ -- Rodolphe Pelloux-Prayer <rodolphe@damsy.net>  Fri, 19 Aug 2011 09:40:33 +0200
+
+dfu-programmer (0.5.1-1) unstable; urgency=low
+
+  * New upstream release. Closes: #520358.
+  * Add debian/watch file.
+
+ -- Andrew Straw <strawman@astraw.com>  Sun, 22 Mar 2009 18:39:52 -0700
+
+dfu-programmer (0.4.3-1) unstable; urgency=low
+
+  * Initial packaging. Closes: #416436.
+
+ -- Andrew Straw <strawman@astraw.com>  Mon, 10 Sep 2007 19:38:53 -0700

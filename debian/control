@@ -1,0 +1,25 @@
+Source: dfu-programmer
+Section: electronics
+Priority: optional
+Maintainer: Rodolphe Pelloux-Prayer <rodolphe@damsy.net>
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               pkg-config,
+               libusb-1.0-0-dev
+Homepage: http://dfu-programmer.sourceforge.net/
+Vcs-Browser: https://gitorious.org/debian-packaging/dfu-programmer/trees/master
+Vcs-Git: git://gitorious.org/debian-packaging/dfu-programmer.git
+
+Package: dfu-programmer
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: device firmware update (DFU) based USB programmer for Atmel chips
+ A Linux based command-line programmer for Atmel chips with a USB
+ bootloader supporting in-system programming.
+ .
+ This is a mostly Device Firmware Update (DFU)-1.0-compliant
+ user-space application. This program was created because the Atmel
+ FLIP program for flashing devices does not run on Linux and because
+ standard DFU loaders do not work for Atmel chips.
